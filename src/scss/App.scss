@@ -1,0 +1,44 @@
+/* The following line can be included in a src/App.scss */
+
+@import "~bootstrap/scss/bootstrap";
+
+/* Ellie's Desserts Color Scheme */
+$orange: #f6bd60;
+$grey: #f7ede2;
+$pink: #f5cac3;
+$green: #84a59d;
+$dark-pink: #f28482;
+$dark-grey: #666;
+$font-stack: Georgia, "Times New Roman", Times, serif;
+
+.navbar-brand {
+    font-family: 'Rochester', $font-stack;
+    font-size:4em;
+    color:$dark-pink;
+}
+
+.nav-link {
+    color:$dark-grey;
+    font-family: $font-stack;
+    font-size:1.4em;
+}
+
+.navbar-nav {
+    padding-top:2em;
+}
+
+.slideshow {
+    background-color: $green;
+}
+
+.navbar {
+    background-color: $grey;
+}
+
+.carousel-caption {
+    right:auto;
+    left:auto;
+    background-color:$dark-pink;
+    width:100%;
+    opacity: 0.8;
+}
