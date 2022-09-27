@@ -1,5 +1,3 @@
-/* The following line can be included in a src/App.scss */
-
 @import "~bootstrap/scss/bootstrap";
 
 /* Ellie's Desserts Color Scheme */
@@ -9,12 +7,37 @@ $pink: #f5cac3;
 $green: #84a59d;
 $dark-pink: #f28482;
 $dark-grey: #666;
-$font-stack: Georgia, "Times New Roman", Times, serif;
 
-.navbar-brand {
-    font-family: 'Rochester', $font-stack;
-    font-size:4em;
-    color:$dark-pink;
+$section-padding: 1.2em;
+$section-margin: 1.2em;
+
+$font-stack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;;
+
+h2, h3 {
+    font-family: 'Rochester',  $font-stack;
+}
+
+h2 {
+    font-size:3em;
+    border-bottom:1px solid $grey;
+}
+
+h3 {
+    font-size:2.4em;
+}
+
+header {
+    background-color: $grey;
+    padding: $section-padding;
+
+    h1 {
+        font-family: 'Rochester', $font-stack;
+        font-size:4em;
+        color:$dark-pink;
+        padding:0;
+        margin:0;
+    }
+    
 }
 
 .nav-link {
@@ -28,8 +51,16 @@ $font-stack: Georgia, "Times New Roman", Times, serif;
 }
 
 .slideshow {
-    background-color: $green;
+    background-color: $grey;
+    $border-radius: 30px;
+    
+    img {
+        border-top-left-radius: $border-radius;
+        border-top-right-radius: $border-radius;
+        
+    }
 }
+
 
 .navbar {
     background-color: $grey;
@@ -41,4 +72,40 @@ $font-stack: Georgia, "Times New Roman", Times, serif;
     background-color:$dark-pink;
     width:100%;
     opacity: 0.8;
+}
+
+section {
+    padding: $section-padding 0;
+
+    h2 {
+        margin-bottom:0.5em;
+    }
+}
+
+#aboutEleanor {
+    
+    h2 {
+        border-bottom:1px solid $pink;
+    }
+
+    background: $grey;
+
+    .container {
+        max-width:800px;
+    }
+
+    .col {
+        padding:3em;
+    }
+    img {
+        border-radius:50%;
+        max-width:250px;
+    }
+}
+
+
+footer {
+    background:$green;
+    padding: $section-padding 0;
+    color:#FFF;
 }
